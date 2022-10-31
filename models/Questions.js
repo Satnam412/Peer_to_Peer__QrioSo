@@ -7,6 +7,7 @@ var Question = new mongoose.Schema({
 	area : {type: String, required: true},
 	question : {type: String, required: true, unique: true},
 	answer : {type: Array},
+	// answer : {type: Array},
 	// likes : {type : Number}
 	timestamp : { type: Date, default: Date.now ,required: true},
 	username : { type: String, lowercase: true}
