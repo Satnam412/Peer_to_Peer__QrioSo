@@ -92,6 +92,7 @@ router.post('/register', function(req, res)
         		return;
 			}
 			callback(null);
+			// callback(true);
       		return;
 		});
 	}
