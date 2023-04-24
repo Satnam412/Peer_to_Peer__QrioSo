@@ -12,7 +12,7 @@ var Question = new mongoose.Schema({
 	timestamp : { type: Date, default: Date.now ,required: true},
 	username : { type: String, lowercase: true}
 	// email_id : {type: String, lowercase: true}
-},{ collection : "question" });
+},{ collection : "question", required: true});
 
 Question.index({
     question: 'text'
