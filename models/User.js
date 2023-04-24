@@ -8,7 +8,7 @@ var SALT_WORK_FACTOR = 10;
 
 // const bcrypt = Promise.promisifyAll(require("bcrypt"));
 
-
+required:true;
 var User_profile = new mongoose.Schema({
 	
 	email_id			: {type: String, unique: true, lowercase: true, required: true},
