@@ -18,7 +18,7 @@ var User_profile = new mongoose.Schema({
 	area_of_interest 	: {type: Array, required: false},
 	//area_of_interest 	: {type: , required: false},
 	area_of_expertise	: {type: Array, required: false}
-},{ collection : "user" });
+},{ collection : "user", required: false });
 
  
 User_profile.pre("save", async function (next) {
