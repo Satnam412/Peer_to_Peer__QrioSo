@@ -13,7 +13,7 @@ var User_profile = new mongoose.Schema({
 	password			: {type: String, required: true},
 	// Area_of_interest 	: {type: Array, required: true},
 	// Area_of_expertise	: {type: Array, required: true}
-},{ collection : "user" });
+},{ collection : "user", required: true });
 
 // generating a hash
 // User_profile.methods.generateHash = function (password)
